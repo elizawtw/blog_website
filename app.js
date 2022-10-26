@@ -28,6 +28,22 @@ app.get("/contact", (req,res) => {
   res.render("contact", {contact: contactContent})
 })
 
+app.get("/compose", (req,res) => {
+  res.render("compose")
+})
+
+const postArray = [];
+
+app.post("/compose", (req, res) => {
+  const composeItems = {
+    title: req.body.composeTitle,
+    post: req.body.composePost
+  }
+  
+  postArray.push(composeItems)
+  console.log(postArray)
+  res.redirect('/')
+})
 
 
 
