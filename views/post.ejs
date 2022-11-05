@@ -1,10 +1,11 @@
 <%-include partials/header.ejs%>
 
-  <h1><%=title%></h1>
-  <p><%=content%></p>
 
-  <form action="/posts/:postId" method="delete">
-    <button type="submit" class="btn btn-success" value="id">Delete</button>
+
+  <form action="/delete" method="post">
+    <h1><%=title%></h1>
+    <p><%=content%></p>
+    <button type="submit" class="btn btn-success" name ="post" value="<%=title%>" onChange="this.form.submit()">Delete</button>
   </form>
 
 <%-include partials/footer.ejs%>
