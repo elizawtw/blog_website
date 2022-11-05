@@ -24,8 +24,14 @@ npm i
 ```
 
 ## Images
-![Home page displays all the posts. Users will be redirected to individual post by clicking 'Read more'](/images/home.png)
 
-![Users will be redirected to compose page by clicking compose button. Post will appear on home page when it is published and user will be redirected to home page](/images/compose.png)
+Home page displays all the posts. Users will be redirected to individual post by clicking 'Read more'
+![home](/images/home.png)
 
-![Users are able to delete post](/images/individual_post.png)
+
+Users will be redirected to compose page by clicking compose button. Post will appear on home page when it is published and user will be redirected to home page
+![compose](/images/compose.png)
+
+
+Users are able to delete post
+![post](/images/individual_post.png)
